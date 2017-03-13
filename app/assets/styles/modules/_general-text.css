@@ -1,0 +1,24 @@
+.general-text {
+    font-family: $secondaryFont;
+    font-weight: 100;
+    line-height: 1.45;
+    margin: 0 0 1em 0;
+    text-align: justify;
+    font-size: .8rem;
+
+    &--gray {
+      color: $mainWhite;
+    }
+
+    @mixin atSmall {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1rem;
+    }
+  & a {
+    font-weight: 700;
+  }
+}

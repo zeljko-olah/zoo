@@ -1,0 +1,52 @@
+.main-content {
+  background: linear-gradient(135deg, $mainOrange, transparent 10%),
+              linear-gradient(45deg,rgba($mainGray, 0.4), #111),
+               url('../../assets/images/grilled-noise.png');
+
+  & p {
+    text-indent: 2rem;
+  }
+
+  &__features {
+    position: relative;
+  }
+
+  &__icon-placeholder {
+    display: block;
+    margin: 0 auto -1.3rem auto;
+
+    height: 80px;
+    width: 80px;
+  }
+
+  &__responsive {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  &__primary {
+    margin: 0;
+
+    @mixin atMedium {
+      margin-right: 3%;
+    }
+    @mixin atLarge {
+      margin-right: 5%;
+    }
+
+    /*border: 2px solid $mainBlack;*/
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  &__sidebar {
+    /*border: 2px solid $mainBlack;*/
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @mixin atMedium {
+      margin-top: 5rem;
+    }
+  }
+}

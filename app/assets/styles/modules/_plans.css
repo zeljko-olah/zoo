@@ -1,0 +1,50 @@
+.plans {
+  font-family: $secondaryFont;
+  border: 2px solid $mainGray;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px $mainGray;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  & div {
+  padding: 15px;
+  border-bottom: 1px solid $mainGray;
+  }
+
+  & div:first-child {
+    background-color: $secondaryBlack;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  & div:last-child {
+    text-align: center;
+    border: 0;
+    background-color: $secondaryBlack;
+
+  }
+
+  &__price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: $mainOrange;
+  }
+
+  &__price span {
+    font-size: 30%;
+    font-weight: 300;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  & ul li {
+    font-size: .9rem;
+  }
+}

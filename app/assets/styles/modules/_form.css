@@ -1,0 +1,70 @@
+.contact-form {
+  max-width: 80%;
+  margin: 0 auto;
+
+  @mixin atSmall {
+    max-width: 60%;
+  }
+
+  @mixin atMedium {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  margin: 0 auto;
+
+  & div:last-child {
+    text-align: center;
+    margin-top: -1rem;
+  }
+
+  &:focus {outline: none;}
+
+  & label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+    margin: .3rem 0;
+    color: darken($secondaryBlack, .7);
+  }
+
+
+  & input[type=text],
+& input[type=email],
+& select,
+& textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid $mainOrange;
+    outline: none;
+    font-size: .9rem;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+      font-family: $secondaryFont;
+      font-weight: 700;
+    }
+  }
+
+  & textarea {
+    height: 150px;
+    resize: none;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    &::placeholder {
+      /*padding-top: 1rem;*/
+    }
+  }
+
+  & input[type=submit] {
+    /*width: 100%;*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+}

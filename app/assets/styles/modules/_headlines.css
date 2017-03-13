@@ -1,0 +1,66 @@
+.headline {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-family: $mainFont;
+  font-size: 2.5rem;
+  color: $mainBlack;
+  text-shadow: 1px 1px 1px rgba($mainGray, 0.3);
+
+  &--margin-top-large {
+    margin-top: 5rem;
+  }
+
+  &--margin-bottom-large {
+    margin-bottom: 5rem;
+  }
+
+  &--margin-bottom-small {
+    margin-top: 2rem;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  @mixin atSmall {
+    font-size: 3.2rem;
+  }
+
+  @mixin atMedium {
+    font-size: 3.5rem;
+
+  }
+  @mixin atLarge {
+    font-size: 3.6rem;
+  }
+
+  &--smaller {
+    font-size: 1.5rem;
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2.5rem;
+
+    }
+    @mixin atLarge {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px rgba($mainGray, 0.3);
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+    }
+
+    @mixin atLarge {
+      font-size: 2rem;
+    }
+  }
+}

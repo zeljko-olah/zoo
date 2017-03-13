@@ -1,0 +1,12 @@
+.my-offers {
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)),
+   url('../../assets/images/grilled-noise.png');
+  /*background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;*/
+
+  /*background: linear-gradient(135deg, $mainOrange, transparent 10%),
+              linear-gradient(45deg,rgba($mainWhite, 0.9), #111);
+  padding-top: 3rem;*/
+}

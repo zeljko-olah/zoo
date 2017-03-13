@@ -1,0 +1,11 @@
+.site-section {
+  min-height: 100vh;
+  margin-top: 0;
+  padding: 20px;
+  border-bottom: 5px solid $mainOrange;
+
+  &--colored {
+      background-color: rgba($mainGray, .3);
+  }
+
+}

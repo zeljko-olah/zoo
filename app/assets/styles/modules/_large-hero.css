@@ -1,0 +1,44 @@
+.large-hero {
+  border-bottom: 5px solid $mainOrange;
+  @mixin clearfix;
+  &__image {
+    /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2)), url('../../assets/images/hero-smaller.jpg');*/
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .9)), url('../../assets/images/hero-smaller.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+    @mixin atSmall {
+      background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9)), url('../../assets/images/hero-small.jpg');
+    }
+
+    @mixin atMedium {
+      background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9)), url('../../assets/images/hero-medium.jpg');
+    }
+
+    @mixin atLarge {
+      background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9)), url('../../assets/images/large-hero.jpg');
+    }
+  }
+
+  &__text-content {
+    position:absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__logo__main {
+    text-indent: -9999px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+
+    @mixin atMedium {
+      transform: scale(1.5);
+    }
+  }
+}

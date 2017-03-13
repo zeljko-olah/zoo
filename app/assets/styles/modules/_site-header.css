@@ -1,0 +1,137 @@
+.site-header {
+  width: 100%;
+  z-index:100;
+
+  &__menu-content {
+    width: 100%;
+    opacity: 0;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    background-color: rgba($mainBlack, .8);
+    box-shadow: 2px 2px 3px rgba($mainOrange, 0.5);
+    text-align: center;
+    padding: 10px 10px;
+
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+
+    @mixin atSmall {
+      z-index: 5;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 5;
+      transform: scale(1);
+    }
+
+    @mixin atSmall {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__logo__graphic {
+    width: 64px;
+    height: 70px;
+    text-indent: -9999px;
+    transform: scale(1);
+    background-image: url('../../assets/images/zeljko.png');
+
+  }
+
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid $mainOrange;
+    border-radius: 4px;
+    z-index: 101;
+
+    @mixin atSmall {
+      top: 7px;
+      left: 10px;
+      transform: translateX(0%);
+    }
+  }
+
+  &__btn-container {
+    margin-bottom: 10px;
+
+    @mixin atSmall {
+      float: right;
+      margin-top: 10px;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: $mainGray;
+      transform-origin: 0 0;
+      transform-origin: 0 50%;
+      transition: all .3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: $mainGray;
+      transition: all .3s ease-out;
+
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: $mainGray;
+      transform-origin: 0 100%;
+      transition: all .3s ease-out;
+    }
+
+      @mixin atSmall {
+        display: none;
+      }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      background-color: $mainGray;
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .site-header__menu-icon__middle {
+      background-color: $mainGray;
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      background-color: $mainGray;
+      transform: rotate(-45deg) scaleX(1.25) translate(0px, 1.7px);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.btn {
+  font-family: $secondaryFont;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $mainOrange;
+  border-radius: 4px;
+  padding: .7rem;
+  display: inline-block;
+  margin-top: 0px;
+
+  &:hover {
+    background-color: rgba($mainWhite, .9);
+  }
+
+  &--orange {
+    color: $mainOrange;
+    border: 2px solid $mainOrange;
+    font-size: 1rem;
+    &:hover {
+      background-color: darken($mainOrange, 50%);
+    }
+  }
+
+  &--dark-border {
+    border: 2px solid $mainBlack;
+  }
+
+  &--hide-on-small {
+    display: none;
+    @mixin atSmall {
+      display: block;
+    }
+  }
+
+  &--large {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+}

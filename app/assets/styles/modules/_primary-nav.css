@@ -1,0 +1,60 @@
+.primary-nav {
+  width: 65%;
+  margin: 100px auto 20px auto;
+  display: inline-block;
+
+  @mixin atSmall {
+    margin: 0px 0px 0px 100px;
+  }
+  @mixin atMedium {
+    width: 60%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @mixin atSmall {
+      float: left;
+      margin: 20px 0;
+    }
+  }
+
+  li {
+    list-style-type: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: .2rem .2rem;
+    border-bottom: 2px solid transparent;
+    border-radius: 30%;
+
+    &:hover {
+      background-color: rgba($mainOrange, .1);
+      border-bottom: 2px solid $mainOrange;
+    }
+
+    @mixin atSmall {
+      display: inline;
+      font-size: .9rem;
+      padding: 5px 5px;
+    }
+
+    @mixin atMedium {
+      font-size: 1rem;
+      padding: 7px 7px;
+    }
+
+    @mixin atLarge {
+      padding-right: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $mainGray;
+    text-transform: uppercase;
+    }
+}

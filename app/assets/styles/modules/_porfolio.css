@@ -1,0 +1,74 @@
+.my-portfolio {
+  position: relative;
+  /*height: 100vh;*/
+
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));*/
+
+  /*&__image {
+    background: url('../../assets/images/large-hero.jpg') top center no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }*/
+      &__slideshow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 50s linear infinite;
+
+            &:nth-child(1) {
+              background-image: url(http://i.imgur.com/K3mPv14.jpg);
+            }
+            &:nth-child(2) {
+              background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+              animation-delay: 10s;
+            }
+            &:nth-child(3) {
+              background-image: url(http://i.imgur.com/emvhOnb.jpg);
+              animation-delay: 20s;
+            }
+            &:nth-child(4) {
+              background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+              animation-delay: 30s;
+            }
+            &:nth-child(5) {
+              background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+              animation-delay: 40s;
+            }
+        }
+      }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 0.2;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 0.3
+  }
+  30% {
+    opacity: 0
+  }
+}
