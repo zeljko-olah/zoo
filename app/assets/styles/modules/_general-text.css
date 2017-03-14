@@ -1,13 +1,14 @@
 .general-text {
     font-family: $secondaryFont;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.45;
+    padding: 10px;
     margin: 0 0 1em 0;
     text-align: justify;
-    font-size: .8rem;
+    font-size: 1rem;
 
     &--gray {
-      color: $mainWhite;
+      color: darken($mainGray, .4);
     }
 
     @mixin atSmall {
@@ -16,7 +17,7 @@
     }
 
     @mixin atMedium {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   & a {
     font-weight: 700;

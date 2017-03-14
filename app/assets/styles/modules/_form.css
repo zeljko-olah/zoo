@@ -25,7 +25,7 @@
     padding: 10px;
     display: block;
     margin: .3rem 0;
-    color: darken($secondaryBlack, .7);
+    color: lighten($secondaryBlack, .3);
   }
 
 
@@ -66,5 +66,10 @@
     padding-right: 2rem;
     border-radius: 5px;
     background-color: transparent;
+    color: $secondaryBlack;
+    &:hover {
+      background-color: #fff;
+      color: $mainBlack;
+    }
   }
 }

@@ -2,13 +2,8 @@
   position: relative;
   /*height: 100vh;*/
 
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
 
-  /*&__image {
-    background: url('../../assets/images/large-hero.jpg') top center no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
-      }*/
       &__slideshow {
         position: absolute;
         width: 100%;

@@ -4,19 +4,25 @@
   margin-bottom: 0;
   font-family: $mainFont;
   font-size: 2.5rem;
-  color: $mainBlack;
-  text-shadow: 1px 1px 1px rgba($mainGray, 0.3);
+  color: $secondaryBlack;
+  text-shadow: 2px 2px 1px rgba($mainBlack, 0.3);
 
   &--margin-top-large {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   &--margin-bottom-large {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    @mixin atMedium {
+      margin-bottom: 3rem;
+    }
   }
 
-  &--margin-bottom-small {
+  &--margin-top-small {
     margin-top: 2rem;
+  }
+  &--margin-bottom-small {
+    margin-bottom: 2rem;
   }
 
   &--center {
@@ -51,8 +57,20 @@
     }
   }
 
+  &--main {
+    font-size: 3rem;
+    @mixin atSmall {
+      font-size: 4rem;
+    }
+    @mixin atMedium {
+      font-size: 5rem;
+    }
+  }
+
   &__subtitle {
     font-size: 1.5rem;
+    color: $secondaryBlack;
+
     text-shadow: 1px 1px 1px rgba($mainGray, 0.3);
 
     @mixin atMedium {
@@ -60,7 +78,11 @@
     }
 
     @mixin atLarge {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
+  }
+
+  &--black {
+    color: $mainBlack;
   }
 }

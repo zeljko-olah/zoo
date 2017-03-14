@@ -11248,6 +11248,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 var showAll = new _ShowAll2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".icon--logo"), "85%");
+// new RevealOnScroll($(".plans"), "85%");
+// new RevealOnScroll($(".site-tech__landing-header"), "100%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".main-content__sidebar"), "50%");
 
 /***/ })
 /******/ ]);

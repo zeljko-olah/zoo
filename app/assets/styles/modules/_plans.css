@@ -1,13 +1,21 @@
 .plans {
   font-family: $secondaryFont;
   border: 2px solid $mainGray;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
   box-shadow: 0 2px 2px $mainGray;
   margin-bottom: 2rem;
+  margin-top: 1rem;
   text-align: center;
+
+  transition-duration:0.5s; transform:scale(1);
+
+  &:hover {
+    box-shadow: 0 0 15px $mainGray;
+    padding:3px; transform:scale(1.02);
+  }
 
   & div {
   padding: 15px;
@@ -15,7 +23,7 @@
   }
 
   & div:first-child {
-    background-color: $secondaryBlack;
+    background-color: rgba($secondaryBlack, .5);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -23,7 +31,7 @@
   & div:last-child {
     text-align: center;
     border: 0;
-    background-color: $secondaryBlack;
+    background-color: rgba($secondaryBlack, .3);
 
   }
 
@@ -32,6 +40,10 @@
     margin-bottom: 10px;
     font-weight: 100;
     color: $mainOrange;
+
+    @mixin atMedium {
+      font-size: 300%;
+    }
   }
 
   &__price span {
@@ -45,6 +57,10 @@
   }
 
   & ul li {
+    font-family: $mainFont;
     font-size: .9rem;
+    color: $secondaryBlack;
+    padding: .5rem 0px;
+
   }
 }

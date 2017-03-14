@@ -1,8 +1,12 @@
 .site-section {
-  min-height: 100vh;
   margin-top: 0;
   padding: 20px;
   border-bottom: 5px solid $mainOrange;
+
+  @mixin atSmall {
+    min-height: 100vh;
+    
+  }
 
   &--colored {
       background-color: rgba($mainGray, .3);

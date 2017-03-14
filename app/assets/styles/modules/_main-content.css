@@ -1,7 +1,6 @@
 .main-content {
-  background: linear-gradient(135deg, $mainOrange, transparent 10%),
-              linear-gradient(45deg,rgba($mainGray, 0.4), #111),
-               url('../../assets/images/grilled-noise.png');
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)),
+   url('../../assets/images/grilled-noise.png');
 
   & p {
     text-indent: 2rem;
@@ -36,12 +35,13 @@
 
     /*border: 2px solid $mainBlack;*/
     border-radius: 10px;
-    padding: 10px;
+    padding: 1rem;
   }
 
   &__sidebar {
-    /*border: 2px solid $mainBlack;*/
-    padding: 10px;
+    border: 2px solid $mainBlack;
+    box-shadow: inset 0px 0px 15px 5px rgba($mainBlack,0.75);
+    padding: 1rem;
     border-radius: 10px;
     overflow: hidden;
 

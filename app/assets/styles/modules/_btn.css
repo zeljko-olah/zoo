@@ -8,6 +8,7 @@
   padding: .7rem;
   display: inline-block;
   margin-top: 0px;
+  cursor: pointer;
 
   &:hover {
     background-color: rgba($mainWhite, .9);
@@ -19,6 +20,7 @@
     font-size: 1rem;
     &:hover {
       background-color: darken($mainOrange, 50%);
+      color: $mainBlack;
     }
   }
 
@@ -29,7 +31,7 @@
   &--hide-on-small {
     display: none;
     @mixin atSmall {
-      display: block;
+      display: inline-block;
     }
   }
 
