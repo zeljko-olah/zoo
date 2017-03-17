@@ -35,10 +35,10 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav">
           <ul>
-            <li><a href="#approach">Approach</a></li>
-            <li><a href="#technologies">Techs</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#offers">Offers</a></li>
+            <li><a href="#approach" id="our-approach-link">Approach</a></li>
+            <li><a href="#technologies" id="our-tech-link">Techs</a></li>
+            <li><a href="#portfolio" id="our-portfolio-link">Portfolio</a></li>
+            <li><a href="#offers" id="our-offers-link">Offers</a></li>
           </ul>
         </nav>
         <div class="site-header__btn-container">
@@ -50,7 +50,7 @@
   <!-- end /header -->
 
   <!-- LARGE HERO -->
-  <section class="large-hero large-hero__image">
+  <section id="start" class="large-hero large-hero__image site-section">
     <div class="large-hero__text-content">
       <h1 class="headline headline--main">Zeljko Olah</h1>
       <div class="large-hero__logo__main icon icon--logo">
@@ -58,13 +58,13 @@
       </div>
       <hr>
       <h2 class="headline__subtitle headline--margin-top-large headline--margin-bottom-large">Front End &amp; WordPress Developer</h2>
-      <a href="#contact" class="btn btn--orange">I Build Websites</a>
+      <a href="#approach" class="btn btn--orange btn-nav">I Build Websites</a>
     </div>
   </section>
   <!-- end /large-hero -->
 
   <!-- MAIN CONTENT -->
-  <section id="approach" class="main-content site-section">
+  <section id="approach" class="main-content site-section" data-matching-link="#our-approach-link">
     <h1 class="headline headline--margin-top-small headline--margin-bottom-small">Build a Modern Website</h1>
     <hr>
     <div class="wrapper">
@@ -87,7 +87,7 @@
           </div>
           <h2 class="headline__subtitle headline--center headline--margin-top-small headline--margin-bottom-smaller">Easy to Maintain</h2>
           <p class="general-text general-text--gray">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-          <a href="#technologies" class="btn btn--orange">Technologies I use</a>
+          <a href="#technologies" class="btn btn--orange btn-nav">Technologies I use</a>
         </div>
         <div class="main-content__sidebar row__medium-4">
           <div class="icn__icon-placeholder">
@@ -148,7 +148,7 @@
   <!-- END /main-content -->
 
   <!-- TECHNOLOGIES -->
-<section id="technologies" class="site-tech site-section">
+<section id="technologies" class="site-tech site-section" data-matching-link="#our-tech-link">
   <div class="wrapper">
     <div class="site-tech__content">
 
@@ -162,7 +162,7 @@
             </div>
             <p class="general-text general-text--gray">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <a href="#portfolio" class="btn btn--orange">Checkout My Portfolio</a>
+          <a href="#portfolio" class="btn btn--orange btn-nav">Checkout My Portfolio</a>
       </div>
 
       <aside class="site-tech__flex site-tech__flex--one">
@@ -195,7 +195,7 @@
 </section>
   <!-- end /site-tech -->
 
-  <section id="portfolio" class="my-portfolio my-portfolio__image site-section">
+  <section id="portfolio" class="my-portfolio my-portfolio__image site-section" data-matching-link="#our-portfolio-link">
     <!-- <h2>Porfolio</h2> -->
     <ul class="my-portfolio__slideshow">
       <li></li>
@@ -203,11 +203,11 @@
     </ul>
     <h1 class="headline headline--margin-bottom-small headline--margin-top-small">Portfolio</h1>
     <hr>
-    <a href="#offers" class="btn btn--abs btn--orange">See Prices</a>
+    <a href="#offers" class="btn btn--abs btn--orange btn-nav">See Prices</a>
   </section>
   <!-- end /porfolio -->
 
-  <section id="offers" class="my-offers site-section site-sections--colored">
+  <section id="offers" class="my-offers site-section" data-matching-link="#our-offers-link">
 
     <div class="wrapper">
       <div class="row">
@@ -283,6 +283,7 @@
   </section>
   <!-- end /offer -->
 
+  <!-- ABOUT ME -->
   <section id="about-me" class="about site-section">
     <div class="wrapper">
       <h1 class="headline headline--margin-bottom-large headline--margin-top-small"> Little More About Me</h1>
@@ -299,24 +300,24 @@
         </div>
         <div class="about__info">
           <div class="wrapper">
-            <div class="icn__icon-placeholder">
-              <i class="icn__responsive icon icon--linkedin"></i>
-            </div>
-            <div class="icn__icon-placeholder">
-              <i class="icn__responsive icon icon--facebook"></i>
-            </div>
-            <div class="icn__icon-placeholder">
-              <i class="icn__responsive icon icon--twitter"></i>
-            </div>
-            <div class="icn__icon-placeholder">
-              <i class="icn__responsive icon icon--google-plus"></i>
-            </div>
-            <div class="icn__icon-placeholder">
-              <i class="icn__responsive icon icon--skype"></i>
-            </div>
-            <div class="icn__icon-placeholder">
+            <a href="#"><div class="icn__icon-placeholder">
+                <i class="icn__responsive icon icon--linkedin"></i>
+              </div></a>
+            <a href="#"><div class="icn__icon-placeholder">
+                <i class="icn__responsive icon icon--facebook"></i>
+              </div></a>
+            <a href="#"><div class="icn__icon-placeholder">
+                <i class="icn__responsive icon icon--twitter"></i>
+              </div></a>
+            <a href="#"><div class="icn__icon-placeholder">
+                <i class="icn__responsive icon icon--google-plus"></i>
+              </div></a>
+            <a href="#"><div class="icn__icon-placeholder">
+                <i class="icn__responsive icon icon--skype"></i>
+              </div></a>
+          <a href="#">  <div class="icn__icon-placeholder">
               <i class="icn__responsive icon icon--mail"></i>
-            </div>
+            </div></a>
           </div>
 
         </div>
@@ -332,7 +333,7 @@
       </div>
         </div>
     </div>
-    <a href="#" class="btn btn--orange">Top <span>&#10149;</span></a>
+    <a href="#start" class="btn btn--orange btn--circle btn--top"><span>&#10149;</span></a>
 </section>
 <!-- end /about-me -->
 

@@ -1,20 +1,42 @@
 .site-header {
   width: 100%;
   z-index:100;
+  position: fixed;
+  transform: scale(1) rotate(0deg) skew(0deg);
+  transition: all .3s ease-in-out;
+
+  @mixin atSmall {
+    position: absolute;
+
+    &--dark {
+      position: fixed;
+      transform: scale(.9) rotate(1deg) skew(1deg);
+    }
+  }
 
   &__menu-content {
     width: 100%;
     opacity: 0;
-    position: fixed;
+    text-align: center;
+
+    @mixin atMedium {
+      position: absolute;
+      background-color: rgba($mainBlack, .8);
+      background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
+      linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7)), url('../../assets/images/footer.gif');
+      background-size: cover;
+
+      .site-header--dark & {
+        background-color: $mainPurple;
+      }
+    }
     z-index: -10;
     top: 0;
     left: 0;
     background-color: rgba($mainBlack, .8);
     box-shadow: 2px 2px 3px rgba($mainOrange, 0.5);
     background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
-    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7)), url('../../assets/images/footer.gif');
-    background-size: cover;
-    text-align: center;
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7));
     padding: 10px 10px;
 
     transform: scale(1.2);
@@ -36,13 +58,23 @@
     }
   }
 
+  &__logo {
+    cursor: crosshair;
+    visibility: hidden;
+    .site-header--is-expanded & {
+      visibility: visible;
+    }
+    @mixin atSmall {
+      visibility: visible;
+    }
+  }
+
   &__logo__graphic {
     width: 64px;
     height: 70px;
     text-indent: -9999px;
     transform: scale(1);
     background-image: url('../../assets/images/zeljko.png');
-
   }
 
   &__logo {
@@ -59,12 +91,23 @@
 
     @mixin atSmall {
       top: 7px;
-      left: 10px;
+      left: 20px;
+      transform: translateX(0%);
+    }
+    @mixin atMedium {
+      top: 7px;
+      left: 2px;
       transform: translateX(0%);
     }
   }
 
   &__btn-container {
+    &:hover {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
     margin-bottom: 10px;
 
     @mixin atSmall {
@@ -103,7 +146,6 @@
       height: 3px;
       background-color: $mainGray;
       transition: all .3s ease-out;
-
     }
 
     &::after {
@@ -139,5 +181,23 @@
       background-color: $mainGray;
       transform: rotate(-45deg) scaleX(1.25) translate(0px, 1.7px);
     }
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }

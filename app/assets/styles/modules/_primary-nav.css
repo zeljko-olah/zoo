@@ -24,9 +24,9 @@
   li {
     list-style-type: none;
     display: block;
-    width: 200px;
+    width: 150px;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: .9rem;
     padding: .2rem .2rem;
     border-bottom: 2px solid transparent;
     border-radius: 30%;
@@ -56,5 +56,11 @@
     text-decoration: none;
     color: $mainGray;
     text-transform: uppercase;
+
+    @mixin atSmall {
+      &.is-current-link {
+        color: $mainOrange;
+      }
     }
+  }
 }

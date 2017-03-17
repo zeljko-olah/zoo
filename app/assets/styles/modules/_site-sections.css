@@ -4,12 +4,7 @@
   border-bottom: 5px solid $mainOrange;
 
   @mixin atSmall {
-    min-height: 100vh;
-    
-  }
-
-  &--colored {
-      background-color: rgba($mainGray, .3);
+    min-height: 100vh;  
   }
 
 }

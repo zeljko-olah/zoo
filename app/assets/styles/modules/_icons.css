@@ -2,12 +2,19 @@
   &__icon-placeholder {
     display: block;
     margin: 0 auto -1.3rem auto;
-
+    cursor: pointer;
     height: 80px;
     width: 80px;
+
+    & i:hover {
+      box-shadow: 0 0 5px $mainGray;
+      padding:3px;
+      transform:scale(1.02);
+    }
   }
 
   &__responsive {
+    border-radius: 50%;
     display: inline-block;
     margin: 0 auto;
   }
