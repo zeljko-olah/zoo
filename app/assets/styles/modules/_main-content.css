@@ -1,6 +1,7 @@
 .main-content {
-  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)),
-   url('../../assets/images/grilled-noise.png');
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+   linear-gradient(rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.6)),
+   url('../../assets/images/noise.png');
 
   & p {
     text-indent: 2rem;
@@ -10,21 +11,9 @@
     position: relative;
   }
 
-  &__icon-placeholder {
-    display: block;
-    margin: 0 auto -1.3rem auto;
-
-    height: 80px;
-    width: 80px;
-  }
-
-  &__responsive {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
   &__primary {
     margin: 0;
+    text-align: center;
 
     @mixin atMedium {
       margin-right: 3%;

@@ -1,4 +1,8 @@
 .site-footer {
   text-align: center;
   font-size: .7rem;
+  background-color: rgba($mainBlack, .8);
+  background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
+  linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7)), url('../../assets/images/footer.gif');
+  background-size: cover;
 }

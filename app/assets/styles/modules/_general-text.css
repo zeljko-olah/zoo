@@ -5,19 +5,23 @@
     padding: 10px;
     margin: 0 0 1em 0;
     text-align: justify;
-    font-size: 1rem;
+    font-size: .8rem;
 
     &--gray {
       color: darken($mainGray, .4);
+    }
+    &--black {
+      color: darken($mainWhite, .3);
     }
 
     @mixin atSmall {
       font-size: 1rem;
       padding: 1rem;
+      /*padding-top: 0;;*/
     }
 
     @mixin atMedium {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   & a {
     font-weight: 700;

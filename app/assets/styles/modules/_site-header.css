@@ -11,6 +11,9 @@
     left: 0;
     background-color: rgba($mainBlack, .8);
     box-shadow: 2px 2px 3px rgba($mainOrange, 0.5);
+    background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7)), url('../../assets/images/footer.gif');
+    background-size: cover;
     text-align: center;
     padding: 10px 10px;
 
@@ -43,7 +46,10 @@
   }
 
   &__logo {
-    position: fixed;
+    position: absolute;
+    @mixin atSmall {
+      position: fixed;
+    }
     top: 20px;
     left: 50%;
     transform: translateX(-50%);

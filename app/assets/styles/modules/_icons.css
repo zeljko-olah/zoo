@@ -1,0 +1,14 @@
+.icn {
+  &__icon-placeholder {
+    display: block;
+    margin: 0 auto -1.3rem auto;
+
+    height: 80px;
+    width: 80px;
+  }
+
+  &__responsive {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}

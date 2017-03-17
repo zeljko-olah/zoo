@@ -1,6 +1,7 @@
 .my-offers {
-  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)),
-   url('../../assets/images/grilled-noise.png');
+  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)),
+  radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.4)),
+   url('../../assets/images/noise.png');
   /*background-size: cover;
   background-position: center;
   height: 100vh;
@@ -9,4 +10,5 @@
   /*background: linear-gradient(135deg, $mainOrange, transparent 10%),
               linear-gradient(45deg,rgba($mainWhite, 0.9), #111);
   padding-top: 3rem;*/
+  text-align: center;
 }

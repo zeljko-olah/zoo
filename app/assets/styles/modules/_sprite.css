@@ -1,59 +1,77 @@
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
 
   .icon {
-    background-image:url('../../assets/images/sprites/sprite-778d6c69.svg');
+    background-image:url('../../assets/images/sprites/sprite-530fafd9.svg');
   }
 
   .no-svg .icon {
-    background-image:url('../../assets/images/sprites/sprite-778d6c69.png');
+    background-image:url('../../assets/images/sprites/sprite-530fafd9.png');
   }
 
   .icon--css3 {
     width: 68px ;
     height: 68px ;
-    background-position: 78.08563535911603% 67.52789699570816% ;
+    background-position: 72.92225201072387% 99.6883116883117% ;
   }
 
   .icon--easy {
     width: 78.67px ;
     height: 78.67px ;
-    background-position: 58.0650670309965% 35.384338595781045% ;
+    background-position: 65.13675378798334% 76.80691487572732% ;
+  }
+
+  .icon--facebook {
+    width: 78.67px ;
+    height: 78.67px ;
+    background-position: 0 76.80691487572732% ;
   }
 
   .icon--fast {
     width: 78.67px ;
     height: 78.67px ;
-    background-position: 58.0650670309965% 0 ;
+    background-position: 99.7267684155328% 0 ;
   }
 
   .icon--git {
     width: 68px ;
     height: 68px ;
-    background-position: 56.353591160220994% 67.52789699570816% ;
+    background-position: 54.69168900804289% 99.6883116883117% ;
+  }
+
+  .icon--google-plus {
+    width: 78.67px ;
+    height: 78.67px ;
+    background-position: 78.01451715287169% 0 ;
   }
 
   .icon--gulp {
     width: 68px ;
     height: 68px ;
-    background-position: 38.74861878453038% 98.01287553648069% ;
+    background-position: 18.230563002680967% 99.6883116883117% ;
   }
 
   .icon--html5 {
     width: 68px ;
     height: 68px ;
-    background-position: 57.533149171270715% 98.01287553648069% ;
+    background-position: 0 99.6883116883117% ;
   }
 
   .icon--jquery {
     width: 68px ;
     height: 68px ;
-    background-position: 99.81767955801105% 0 ;
+    background-position: 54.69168900804289% 51.08441558441559% ;
   }
 
   .icon--js {
     width: 68px ;
     height: 68px ;
-    background-position: 99.81767955801105% 29.184549356223176% ;
+    background-position: 75.7828418230563% 51.08441558441559% ;
+  }
+
+  .icon--linkedin {
+    width: 78.67px ;
+    height: 78.67px ;
+    background-position: 56.302265890210585% 26.458816802878957% ;
   }
 
   .icon--logo {
@@ -62,38 +80,56 @@
     background-position: 0 0 ;
   }
 
+  .icon--mail {
+    width: 78.67px ;
+    height: 78.67px ;
+    background-position: 99.7267684155328% 26.458816802878957% ;
+  }
+
   .icon--postcss {
     width: 68px ;
     height: 68px ;
-    background-position: 19.964088397790054% 98.01287553648069% ;
+    background-position: 96.8739946380697% 74.5487012987013% ;
   }
 
   .icon--question {
     width: 78.67px ;
     height: 78.67px ;
-    background-position: 80.45712008652833% 0 ;
+    background-position: 43.424502525322225% 76.80691487572732% ;
   }
 
   .icon--responsive {
     width: 78.67px ;
     height: 78.67px ;
-    background-position: 80.45712008652833% 35.384338595781045% ;
+    background-position: 21.712251262661113% 76.80691487572732% ;
+  }
+
+  .icon--skype {
+    width: 78.67px ;
+    height: 78.67px ;
+    background-position: 56.302265890210585% 0 ;
+  }
+
+  .icon--twitter {
+    width: 78.67px ;
+    height: 78.67px ;
+    background-position: 78.01451715287169% 26.458816802878957% ;
   }
 
   .icon--webpack {
     width: 68px ;
     height: 68px ;
-    background-position: 76.31767955801105% 98.01287553648069% ;
+    background-position: 36.46112600536193% 99.6883116883117% ;
   }
 
   .icon--wp {
     width: 153.08px ;
     height: 153.08px ;
-    background-position: 0 50.899134667387784% ;
+    background-position: 0 33.7744482325498% ;
   }
 
   .icon--zeljko {
     width: 72.27px ;
     height: 72.27px ;
-    background-position: 0 99.84260918987452% ;
+    background-position: 97.99582350229164% 51.80258782471274% ;
   }

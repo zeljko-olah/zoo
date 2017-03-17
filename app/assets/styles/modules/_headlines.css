@@ -24,6 +24,12 @@
   &--margin-bottom-small {
     margin-bottom: 2rem;
   }
+  &--margin-top-smaller {
+    margin-top: 1rem;
+  }
+  &--margin-bottom-smaller {
+    margin-bottom: 1rem;
+  }
 
   &--center {
     text-align: center;
@@ -68,21 +74,31 @@
   }
 
   &__subtitle {
+    font-family: $mainFont;
     font-size: 1.5rem;
     color: $secondaryBlack;
+    text-shadow: 2px 2px 1px rgba($mainBlack, 0.3);
 
-    text-shadow: 1px 1px 1px rgba($mainGray, 0.3);
+    &--light {
+      color: $mainWhite;
+    }
 
     @mixin atMedium {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     @mixin atLarge {
-      font-size: 1.8rem;
+      font-size: 2rem;
+    }
+    &--small {
+      font-size: 1.2rem;
+      color: $mainGray;
+      text-transform: uppercase;
     }
   }
 
   &--black {
     color: $mainBlack;
   }
+
 }

@@ -1,54 +1,43 @@
 .my-portfolio {
   position: relative;
-  /*height: 100vh;*/
+  height: 100vh;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(rgba($mainPurple, 0.5), rgba(0, 0, 0, 0.8)),
+  url('../../assets/images/noise.png');
 
-      &__slideshow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+  &__slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-        & li {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-size: cover;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            opacity: 0;
-            z-index: 0;
-            animation: imageAnimation 50s linear infinite;
+    & li {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: auto;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 10s linear infinite;
 
-            &:nth-child(1) {
-              background-image: url(http://i.imgur.com/K3mPv14.jpg);
-            }
-            &:nth-child(2) {
-              background-image: url(http://i.imgur.com/SBEmFpv.jpg);
-              animation-delay: 10s;
-            }
-            &:nth-child(3) {
-              background-image: url(http://i.imgur.com/emvhOnb.jpg);
-              animation-delay: 20s;
-            }
-            &:nth-child(4) {
-              background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
-              animation-delay: 30s;
-            }
-            &:nth-child(5) {
-              background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
-              animation-delay: 40s;
-            }
-        }
+      &:nth-child(1) {
+        background-image: url('../../assets/images/1.png');
       }
+      &:nth-child(2) {
+        background-image: url('../../assets/images/2.png');
+        animation-delay: 5s;
+      }
+    }
+  }
 }
 
 @keyframes imageAnimation {
@@ -64,6 +53,9 @@
     opacity: 0.3
   }
   30% {
+    opacity: 1
+  }
+  100% {
     opacity: 0
   }
 }

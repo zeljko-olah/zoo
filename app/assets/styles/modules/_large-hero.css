@@ -2,23 +2,28 @@
   border-bottom: 5px solid $mainOrange;
   @mixin clearfix;
   &__image {
-    /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.2)), url('../../assets/images/hero-smaller.jpg');*/
-    background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, .8)), url('../../assets/images/hero-smaller.jpg');
+    background-image: radial-gradient(180deg, rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.7)),
+    linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.7)),
+    url('../../assets/images/hero-smaller.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+    text-align: center;
 
     @mixin atSmall {
-      background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.8)), url('../../assets/images/hero-small.jpg');
+      background-image: radial-gradient(180deg, rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.7)),
+      linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.7)), url('../../assets/images/hero-small.jpg');
     }
 
     @mixin atMedium {
-      background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.8)), url('../../assets/images/hero-medium.jpg');
+      background-image: radial-gradient(180deg, rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.7)),
+      linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.7)), url('../../assets/images/hero-medium.jpg');
     }
 
     @mixin atLarge {
-      background-image: linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.8)), url('../../assets/images/large-hero.jpg');
+      background-image: radial-gradient(180deg, rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.7)),
+      linear-gradient(rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.7)), url('../../assets/images/large-hero.jpg');
     }
   }
 

@@ -1,0 +1,86 @@
+.about {
+  background-image: radial-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .9)),
+   linear-gradient(rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.3)),
+   url('../../assets/images/noise.png');
+   text-align: center;
+
+   &__info,
+   &__credentials {
+     @mixin clearfix;
+     border: 2px solid $mainBlack;
+     box-shadow: inset 0px 0px 15px 5px rgba($mainBlack,0.75);
+     margin-right: 5%;
+     text-align: center;
+   }
+
+   &__credentials {
+     margin-top: 6rem;
+     margin-bottom: 1rem;
+     @mixin atMedium {
+       margin-top: 6rem;
+       margin-bottom: 3rem;
+     }
+   }
+
+   &__info div {
+     display: inline-block;
+     margin: 1rem auto;
+   }
+
+    & .icn__icon-placeholder {
+      margin: 0;
+    }
+
+   &__photo-box {
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -80px auto;
+    top: -80px;
+    border: 6px solid rgba($mainPurple, .3 );
+    border: 2px solid $mainBlack;
+    box-shadow: 0px 0px 15px 5px rgba($mainBlack,0.75);
+    border-radius: 50%;
+
+    & > .front {
+      background-image: url('../../assets/images/about-me-display.png');
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      transform: perspective(600px) rotateY(0deg);
+      backface-visibility: hidden;
+      transition: transform .5s linear 0s;
+      border-radius: 50%;
+    }
+
+    & > .back {
+      background-image: url('../../assets/images/about-me.jpg');
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform: perspective(600px) rotateY(180deg);
+      backface-visibility: hidden;
+      transition: transform 0.5s linear 0s;
+      border-radius: 50%;
+    }
+
+    &:hover > .back {
+      transform: perspective(600px) rotateY(0deg);
+      background-color: #fff;
+    }
+
+    &:hover > .front {
+      transform: perspective(600px) rotateY(-180deg);
+    }
+   }
+
+   &__resume {
+     padding: 1rem;
+   }
+
+}
