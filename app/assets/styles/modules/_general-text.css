@@ -1,23 +1,58 @@
 .general-text {
     font-family: $secondaryFont;
+    font-size: .8rem;
     font-weight: 400;
     line-height: 1.45;
+    text-indent: 2rem;
     padding: 10px;
-    margin: 0 0 1em 0;
-    text-align: justify;
-    font-size: .8rem;
+    margin: 0;
+    text-align: left;
 
     &--gray {
-      color: darken($mainGray, .4);
+      color: darken($mainGray, .3);
+
+      & span {
+        color: darken($mainOrange, 0.1);
+        font-size: 1.2rem;
+        display: inline-block;
+        margin-bottom: .5rem;
+      }
     }
-    &--black {
+    &--white {
       color: darken($mainWhite, .3);
+      text-indent: 2rem;
+      font-weight: 700;
+      text-align: left;
+
+      &::first-letter {
+        font-size: 300%;
+        line-height: 0;
+        color: $mainOrange;
+      }
+    }
+
+    &--strong {
+      font-weight: 700;
+      color: darken($mainWhite, .5);
+      font-size: .8rem;
+      @mixin atSmall {
+        font-size: 1rem;
+      }
+
+      & span {
+        color: darken($mainOrange, 0.1);
+        font-size: 1rem;
+        @mixin atSmall {
+          font-size: 1.2rem;
+        }
+        display: inline-block;
+        margin-bottom: .5rem;
+      }
     }
 
     @mixin atSmall {
       font-size: 1rem;
       padding: 1rem;
-      /*padding-top: 0;;*/
     }
 
     @mixin atMedium {

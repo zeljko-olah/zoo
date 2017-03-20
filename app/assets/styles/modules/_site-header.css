@@ -1,46 +1,57 @@
 .site-header {
   width: 100%;
-  z-index:100;
+  z-index:-1;
+  @mixin atMedium {
+    z-index: 1;
+  }
   position: fixed;
   transform: scale(1) rotate(0deg) skew(0deg);
   transition: all .3s ease-in-out;
+
+  &--is-expanded {
+    z-index: 10;
+  }
 
   @mixin atSmall {
     position: absolute;
 
     &--dark {
       position: fixed;
+      z-index: 2;
       transform: scale(.9) rotate(1deg) skew(1deg);
     }
   }
 
   &__menu-content {
+    position: relative;
     width: 100%;
     opacity: 0;
     text-align: center;
-
-    @mixin atMedium {
-      position: absolute;
-      background-color: rgba($mainBlack, .8);
-      background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
-      linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7)), url('../../assets/images/footer.gif');
-      background-size: cover;
-
-      .site-header--dark & {
-        background-color: $mainPurple;
-      }
-    }
     z-index: -10;
     top: 0;
     left: 0;
-    background-color: rgba($mainBlack, .8);
-    box-shadow: 2px 2px 3px rgba($mainOrange, 0.5);
-    background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
+    background-color: rgba($mainBlack, .9);
+    box-shadow: 5px 5px 10px rgba($mainOrange, 0.5);
+    background-image: radial-gradient(180deg, rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.9)),
     linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7));
     padding: 10px 10px;
 
     transform: scale(1.2);
     transition: all .3s ease-out;
+
+    @mixin atMedium {
+      position: absolute;
+      background-color: rgba($mainBlack, .8);
+      background-image: radial-gradient(180deg, rgba($mainPurple, 0.4), rgba(0, 0, 0, 0.9)),
+      linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.9)),
+      url('../../assets/images/footer.gif');
+      background-size: cover;
+
+      .site-header--dark & {
+        background-color: $mainGray;
+      }
+    }
+
 
     @mixin atSmall {
       z-index: 5;
@@ -113,73 +124,6 @@
     @mixin atSmall {
       float: right;
       margin-top: 10px;
-    }
-  }
-
-  &__menu-icon {
-    width: 20px;
-    height: 19px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-    cursor: pointer;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: $mainGray;
-      transform-origin: 0 0;
-      transform-origin: 0 50%;
-      transition: all .3s ease-out;
-    }
-
-    &__middle {
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: $mainGray;
-      transition: all .3s ease-out;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: $mainGray;
-      transform-origin: 0 100%;
-      transition: all .3s ease-out;
-    }
-
-      @mixin atSmall {
-        display: none;
-      }
-  }
-
-  &__menu-icon--close-x {
-    &::before {
-      background-color: $mainGray;
-      transform: rotate(45deg) scaleX(1.25);
-    }
-
-    .site-header__menu-icon__middle {
-      background-color: $mainGray;
-      opacity: 0;
-      transform: scaleX(0);
-    }
-
-    &::after {
-      background-color: $mainGray;
-      transform: rotate(-45deg) scaleX(1.25) translate(0px, 1.7px);
     }
   }
 }

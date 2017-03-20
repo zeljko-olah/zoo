@@ -7,9 +7,9 @@
     width: 80px;
 
     & i:hover {
-      box-shadow: 0 0 5px $mainGray;
-      padding:3px;
-      transform:scale(1.02);
+      box-shadow: 0 0 7px $mainGray;
+      padding:0px;
+      transform:scale(.9);
     }
   }
 

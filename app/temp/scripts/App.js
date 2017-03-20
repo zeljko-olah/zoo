@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11082,7 +11082,7 @@ var MobileMenu = function () {
     _classCallCheck(this, MobileMenu);
 
     this.siteHeader = (0, _jquery2.default)(".site-header");
-    this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
+    this.menuIcon = (0, _jquery2.default)(".mobile__menu-icon");
     this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
     this.events();
   }
@@ -11097,7 +11097,7 @@ var MobileMenu = function () {
     value: function toggleTheMenu() {
       this.menuContent.toggleClass('site-header__menu-content--is-visible');
       this.siteHeader.toggleClass('site-header--is-expanded');
-      this.menuIcon.toggleClass('site-header__menu-icon--close-x');
+      this.menuIcon.toggleClass('mobile__menu-icon--close-x');
     }
   }]);
 
@@ -11189,7 +11189,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(8);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11201,9 +11201,8 @@ var StickyHeader = function () {
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
-    // this.lazyImages = $(".lazyload");
     this.siteHeader = (0, _jquery2.default)(".site-header");
-    this.headerTriggerElement = (0, _jquery2.default)('.headline--main');
+    this.headerTriggerElement = (0, _jquery2.default)('.large-hero__logo__main');
     this.createHeaderWaypoint();
     this.pageSections = (0, _jquery2.default)(".site-section");
     this.headerLinks = (0, _jquery2.default)(".primary-nav a");
@@ -11212,16 +11211,7 @@ var StickyHeader = function () {
     this.navButton = (0, _jquery2.default)('.btn-nav');
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
-    // this.refreshWaypoints();
   }
-  //
-  // refreshWaypoints() {
-  //   this.lazyImages.on("load", function() {
-  //     Waypoint.refreshAll();
-  //   });
-  // }
-  //
-
 
   _createClass(StickyHeader, [{
     key: 'addSmoothScrolling',
@@ -11286,9 +11276,7 @@ exports.default = StickyHeader;
 
 /***/ }),
 /* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11636,7 +11624,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11661,9 +11649,7 @@ var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-new _RevealOnScroll2.default((0, _jquery2.default)(".icon--logo"), "85%");
-// new RevealOnScroll($(".plans"), "85%");
-// new RevealOnScroll($(".site-tech__landing-header"), "100%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".about__resume--curl-page"), "55%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".main-content__sidebar"), "50%");
 var stickyHeader = new _StickyHeader2.default();
 

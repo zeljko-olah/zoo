@@ -9,4 +9,8 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+
+  &--top-bottom-margin {
+    margin: 2rem 0;
+  }
 }

@@ -3,17 +3,11 @@
    linear-gradient(rgba($mainPurple, 0.2), rgba(0, 0, 0, 0.6)),
    url('../../assets/images/noise.png');
 
-  & p {
-    text-indent: 2rem;
-  }
-
-  &__features {
-    position: relative;
-  }
-
   &__primary {
     margin: 0;
     text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
 
     @mixin atMedium {
       margin-right: 3%;
@@ -21,10 +15,10 @@
     @mixin atLarge {
       margin-right: 5%;
     }
+  }
 
-    /*border: 2px solid $mainBlack;*/
-    border-radius: 10px;
-    padding: 1rem;
+  &__features {
+    position: relative;
   }
 
   &__sidebar {

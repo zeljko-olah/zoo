@@ -12,7 +12,6 @@
     text-align: center;
     text-indent: -9999px;
     margin: -1.5rem auto;
-    transform: scale(0.5);
 
     @mixin atSmall {
       position: absolute;
@@ -40,7 +39,7 @@
       flex: 1;
 
       &:first-child {
-        flex-basis: 200px;
+        flex-basis: 250px;
       }
 
       &--one {
@@ -54,14 +53,13 @@
     padding: 0;
     @mixin atSmall {
     display: block;
-    float: none;
     }
 
     & li {
       position: relative;
       text-align: center;
       display:table;
-      margin:0px auto 0px auto;
+      margin: 0px auto;
       color: $mainWhite;
       list-style: none;
       font-size: 0.8rem;
@@ -96,6 +94,7 @@
     margin-bottom: 1rem;
     margin-top: 1.2rem;
     transform: scale(0.7);
+    margin: -1rem auto;
 
     @mixin atSmall {
       transform: scale(0.8);

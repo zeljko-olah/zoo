@@ -1,0 +1,70 @@
+.mobile {
+  cursor: pointer;
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 3px;
+      background-color: $mainGray;
+      transform-origin: 0 0;
+      transform-origin: 0 50%;
+      transition: all .3s ease-out;
+    }
+
+    &__middle {
+      position: fixed;
+      top: 28px;
+      right: 20px;
+      width: 20px;
+      height: 3px;
+      background-color: $mainGray;
+      transition: all .3s ease-out;
+    }
+
+    &::after {
+      content: "";
+      position: fixed;
+      top: 36px;
+      right: 20px;
+      width: 20px;
+      height: 3px;
+      background-color: $mainGray;
+      transform-origin: 0 100%;
+      transition: all .3s ease-out;
+    }
+
+      @mixin atSmall {
+        display: none;
+      }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      background-color: $mainGray;
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .mobile__menu-icon__middle {
+      background-color: $mainGray;
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      background-color: $mainGray;
+      transform: rotate(-45deg) scaleX(1.25) translate(0px, 1.7px);
+    }
+  }
+}
