@@ -2145,7 +2145,7 @@ a {
 }
 
 .about__resume--curl-page img {
-  width: 100%;
+  width: 25%;
   position: absolute;
   z-index: 0;
   top: 0;
