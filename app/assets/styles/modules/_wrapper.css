@@ -10,6 +10,11 @@
     padding-right: 18px;
   }
 
+  &--narrow {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   &--top-bottom-margin {
     margin: 2rem 0;
   }

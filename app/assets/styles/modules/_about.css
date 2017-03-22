@@ -6,7 +6,8 @@
    position: relative;
 
    &__info,
-   &__credentials {
+   &__credentials,
+   &__certificates {
      @mixin clearfix;
      border: 2px solid $mainBlack;
      box-shadow: inset 0px 0px 15px 5px rgba($mainBlack,0.75);
@@ -19,7 +20,16 @@
      margin-bottom: 1rem;
      @mixin atMedium {
        margin-top: 6rem;
-       margin-bottom: 3rem;
+       margin-bottom: 1.5rem;
+     }
+   }
+
+   &__info,
+   &__certificates {
+     margin-bottom: 1rem;
+     @mixin atMedium {
+       margin-top: 1rem;
+       margin-bottom: 1.5rem;
      }
    }
 
@@ -27,6 +37,16 @@
      display: inline-block;
      margin: 1rem auto;
      padding: 0.2rem;
+   }
+
+   &__certificates img {
+     cursor: pointer;
+     width: 90%;
+     &:hover {
+       box-shadow: 0 0 2px 3px $mainGray;
+       padding:0px;
+       transform:scale(0.95);
+     }
    }
 
     & .icn__icon-placeholder {
