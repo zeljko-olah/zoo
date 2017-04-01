@@ -4,6 +4,12 @@
   }
 }
 
+@define-mixin atSmallLandscape {
+  @media (max-width: 800px) and (orientation: landscape) {
+    @mixin-content;
+  }
+}
+
 @define-mixin atMedium {
   @media (min-width: 800px) {
     @mixin-content;
@@ -15,6 +21,7 @@
     @mixin-content;
   }
 }
+
 
 @define-mixin clearfix {
   &::after {

@@ -7,8 +7,8 @@ import Modal from './modules/Modal';
 
 
 var mobileMenu = new MobileMenu();
-new RevealOnScroll($(".about__resume--curl-page"), "55%");
-new RevealOnScroll($(".main-content__sidebar"), "50%");
+new RevealOnScroll($(".about__resume--curl-page"), "105%");
+new RevealOnScroll($(".main-content__sidebar"), "60%");
 var stickyHeader = new StickyHeader();
 var modal = new Modal($(".open-modal-1"), $(".modal-1"));
 var modal = new Modal($(".open-modal-2"), $(".modal-2"));

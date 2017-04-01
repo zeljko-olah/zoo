@@ -3,7 +3,7 @@
   z-index: 9999;
   background-color: rgba($mainGray, .95);
   top: 0;
-  bottom: 0;
+  bottom: -30%;
   left: 0;
   right: 0;
   opacity: 0;
@@ -11,6 +11,13 @@
   transform: scale(1.2);
   transition: all .3s ease-out;
   text-align: center;
+
+  @mixin atSmallLandscape {
+    & h1,
+    & h2 {
+      display: none;
+    }
+  }
 
 
   &--is-visible {
@@ -20,22 +27,30 @@
   }
 
   &__inner {
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     top: 0;
   }
 
   &__img {
-    position: absolute;
-    max-width: 800px;
-    max-height: 600px;
+    margin: 0 auto;
+    width: 90%;
+    @mixin atMedium {
+      width: 40%;
+    }
+    @mixin atSmallLandscape {
+      width: 70%;
+      margin-top: 1rem;
+    }
+
+
+    height: auto;
     border: 5px solid $secondaryBlack;
     border-radius: 20px;
     overflow: hidden;
-    width: 90%;
-    top: 120%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 100%;
+    /*left: 50%;
+    transform: translateX(-50%);*/
 
     & img {
       width: 100%;
